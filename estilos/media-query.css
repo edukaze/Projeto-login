@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+
+/*Typical device breakpoint
+-------------------------
+Pequenas telas até 600px
+Celular:600px até 768px
+Tablet:768px 992px
+desktop:992px até 1200px
+Grandes telas: acima de 1200px
+----------------------------
+ */
+ :root {
+  --color-fundo: #121212;
+  --color-fundo-secundario: #1E1E1E;
+  --color-texto: #E0E0E0;
+  --color-primaria: #3AAFFA;
+  --color-alertas: #FF5C57;
+  --font-titulo: 'Orbitron', sans-serif;
+  --font-texto: 'Exo 2', sans-serif;
+
+}
+
+ @media screen and (min-width:768px) and (max-width: 992px) {
+
+    body{
+        background-image: linear-gradient(to bottom,  var(--color-primaria), var(--color-fundo) );
+    }
+    section#login{
+        width: 80vw;
+
+    }
+    section#login div#imagem{
+        float: left;
+        width: 40%;
+        height: 100%;
+        
+    }
+    section#login div#formulario{
+        float: right;
+        width: 60%;
+    }
+ }
+
+ @media screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to bottom,  var(--color-primaria), var(--color-fundo) );
+    }
+    section#login{
+        width: 950px;
+
+    }
+    section#login div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+        
+    }
+    section#login div#formulario{
+        float: right;
+        width: 50%;
+    }
+ }
