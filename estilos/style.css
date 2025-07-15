@@ -70,11 +70,15 @@ section#login >div#imagem{
 }
 
 section#login div#formulario {
-    font-family: var(--font-titulo);
     display: block;
-    text-align: center;
     padding: 10px;
 }
 section#login div#formulario > h1{
     padding-bottom: 5px;
+    text-align: center; 
+    font-family: var(--font-titulo);
+    
+}
+div#formulario > p{
+    font-size: 0.8em;
 }
