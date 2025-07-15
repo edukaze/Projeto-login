@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+    Paleta de cores
+    Preto : #121212
+    preto mais claro: #1E1E1E
+    cor de texto branco beger: #E0E0E0;
+    cor primaria azul claro:  #3AAFFA;
+    alertas de outros : #FF5C57;
+
+*/
+
+:root {
+  --color-fundo: #121212;
+  --color-fundo-secundario: #1E1E1E;
+  --color-texto: #E0E0E0;
+  --color-primaria: #3AAFFA;
+  --color-alertas: #FF5C57;
+  --font-titulo: 'Orbitron', sans-serif;
+  --font-texto: 'Exo 2', sans-serif;
+
+}
+
+*{
+    font-family:var(--font-texto); 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: var(--color-fundo);
+    color: var(--color-texto) ;
+    height: 100vh;
+    width:100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    background-color: var(--color-fundo-secundario);
+    width: 250px;
+    height:500px ;
+    border-radius: 20px 30px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+section#login >div#imagem{
+    background: var(--color-fundo) url(../imagens/fundo-gamer.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center bottom;
+
+}
+
+div#formulario > h1{
+    font-family: var(--font-titulo);
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
