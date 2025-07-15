@@ -52,9 +52,13 @@ section#login{
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.377);
+
 }
 
 section#login >div#imagem{
+    display: block;
     background: var(--color-fundo) url(../imagens/fundo-gamer.jpg) no-repeat;
     height: 200px;
     background-size: cover;
@@ -62,8 +66,12 @@ section#login >div#imagem{
 
 }
 
-div#formulario > h1{
+section#login div#formulario {
     font-family: var(--font-titulo);
+    display: block;
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    padding: 10px;
+}
+section#login div#formulario > h1{
+    padding-bottom: 5px;
 }
